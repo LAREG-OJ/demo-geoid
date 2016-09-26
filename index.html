@@ -141,6 +141,7 @@ and open the template in the editor.
 							var url = window.URL.createObjectURL(blob);
 							element.setAttribute('href', url);
 							element.setAttribute('download', 'itowns-geoid.png');
+							document.body.appendChild(element);
 							element.click();
 							window.URL.revokeObjectURL(blob);
 						});
